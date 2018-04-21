@@ -3,8 +3,10 @@
   <head>
     <title>SecretTanda</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald" rel="stylesheet">
+    <%= stylesheet_link_tag    '/assets/stylesheets/styles.css' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -12,7 +14,7 @@
 
   <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
-       
+
     <% if user_signed_in?%>
       <%= link_to "Logout", destroy_user_session_path, method: :delete %>
     <% else %>
