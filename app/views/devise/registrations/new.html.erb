@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= f.label :location %><br />
-    <%= f.text_field :location, autocomplete: "off" %>
+    <%= f.collection_select :location_id, @locations, :id, :city %>
   </div>
 
   <div class="actions">
