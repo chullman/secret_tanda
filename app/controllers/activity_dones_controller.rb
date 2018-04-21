@@ -21,20 +21,7 @@ class ActivityDonesController < ApplicationController
   def edit
   end
 
-  def create_random_activity
 
-
-    if user_signed_in?
-
-      @random_activity = Activity.order("RANDOM()").first
-
-      @new_activity_done = ActivityDone.create(user_id: current_user.id, activity_id: @random_activity.id)
-      
-    end
-
-    redirect_to home_index_path
-
-  end
 
   # POST /activity_dones
   # POST /activity_dones.json
