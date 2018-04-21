@@ -15,6 +15,105 @@ body {
   justify-content: center;
 }
 
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  padding: 5px 20px;
+  text-align: center;
+}
+
+.nav-masthead {
+  padding: 20px 15px 0px 0px;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+.btnBlueGreen {
+  background: #00AE68;
+}
+
+.btnRed {
+  background: #FF3232;
+}
+
+a.button {
+  display: block;
+  position: relative;
+  float: left;
+  width: 120px;
+  padding: 0;
+  margin: 10px 20px 10px 0;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.2s ;
+}
+
+.btnBlueGreen.btnPush {
+  box-shadow: 0px 5px 0px 0px #007144;
+}
+
+.btnRed.btnPush {
+  box-shadow: 0px 5px 0px 0px #cc2828;
+}
+
+
+.btnPush:hover {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.btnBlueGreen.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px #007144;
+}
+
+.btnRed.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px #007144;
+}
+
+.challenge-btns {
+  position: absolute;
+  right: 650px;
+}
+
 h1{
   font-family: 'Oswald', sans-serif;
   color: white;
@@ -24,7 +123,8 @@ h1{
 
 p {
   font-family: 'Open Sans', sans-serif;
-  color: white
+  color: white;
+  line-height: 28px;
 }
 
 .main{
@@ -51,6 +151,7 @@ a, a:hover{
 
 .form-questions {
 max-width:500px;
+padding: 120px 0;
 
 }
 .form-signin h1, .form-questions h1 {
@@ -85,13 +186,11 @@ font-size: 36px;
 }
 .form-signin input[type="email"] {
   margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+
 }
 
 label {
@@ -102,6 +201,11 @@ label {
   background-color: #9ac63b;
   border-radius: 25px;
   border: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
 }
 
 .btn-primary:hover {
