@@ -15,16 +15,24 @@ body {
   justify-content: center;
 }
 
-/*
- * Header
- */
-.masthead {
-  margin-bottom: 2rem;
-}
-
 .masthead-brand {
   padding: 5px 20px;
   text-align: center;
+}
+
+.table {
+  margin-top: 70px;
+}
+
+th, td {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+th {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+    text-transform: uppercase;
 }
 
 .nav-masthead {
