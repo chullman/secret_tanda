@@ -20,15 +20,6 @@ ActiveRecord::Schema.define(version: 20180421040920) do
     t.string "name"
   end
 
-  create_table "activities_dones", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "activities_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["activities_id"], name: "index_activities_dones_on_activities_id"
-    t.index ["user_id"], name: "index_activities_dones_on_user_id"
-  end
-
   create_table "activity_dones", force: :cascade do |t|
     t.integer "user_id"
     t.integer "activity_id"
