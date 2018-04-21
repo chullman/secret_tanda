@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180421022547) do
+ActiveRecord::Schema.define(version: 20180421040920) do
 
   create_table "activities", force: :cascade do |t|
     t.string "description"
@@ -20,13 +20,13 @@ ActiveRecord::Schema.define(version: 20180421022547) do
     t.string "name"
   end
 
-  create_table "activities_dones", force: :cascade do |t|
+  create_table "activity_dones", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "activities_id"
+    t.integer "activity_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["activities_id"], name: "index_activities_dones_on_activities_id"
-    t.index ["user_id"], name: "index_activities_dones_on_user_id"
+    t.index ["activity_id"], name: "index_activity_dones_on_activity_id"
+    t.index ["user_id"], name: "index_activity_dones_on_user_id"
   end
 
   create_table "locations", force: :cascade do |t|

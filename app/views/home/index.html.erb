@@ -1,1 +1,10 @@
 <h1>Home</h1>
+<h1>Home#index</h1>
+
+<% if user_signed_in? %>
+
+<h2>Hello <%=  current_user.first_name %>, your random challenge for this week is: </h2>
+<h3><%= @new_activity_done.activity.description %></h3>
+
+
+<% end %>

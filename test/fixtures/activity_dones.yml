@@ -2,8 +2,8 @@
 
 one:
   user: one
-  activities: one
+  activity: one
 
 two:
   user: two
-  activities: two
+  activity: two
