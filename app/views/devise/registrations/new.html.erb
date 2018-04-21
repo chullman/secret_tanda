@@ -1,10 +1,10 @@
 
 <div class="main-login">
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), class: "form-signin text-center") do |f| %>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), class: "form-signin", style:"text-align:center;") do |f| %>
   <%= devise_error_messages! %>
 
   <%= image_tag 'panda_hat.png', class: "mb-4", style: 'width:72px; height:90px' %>
-  <h1 class="h3 mb-3 font-weight-normal">Secret Tanda</h1>
+  <h1 class="h3 mb-3 ">Secret Tanda</h1>
 
   <div class="field">
     <%= f.label :first_name, :class=>'sr-onlyd' %><br />
