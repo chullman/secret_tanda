@@ -1,4 +1,9 @@
 class User < ApplicationRecord
-  belongs_to :location
-  has_many :activities_done
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
+
+         has_many :activities_done
+         belongs_to :location
 end
