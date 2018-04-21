@@ -13,22 +13,56 @@ body {
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  background-color: #3fa0cb;
 }
 
-.form-signin {
+h1{
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: white
+}
+
+.main{
+  background: linear-gradient(150deg, #5ed6eb, #228cc5 80%, #228cc5);
+  z-index: -99;
+}
+
+.left-main {
+  padding: 100px 50px;
+}
+
+a, a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+
+.form-signin, .form-questions {
   width: 100%;
   max-width: 330px;
   padding: 15px;
   margin: 0 auto;
 }
 
-.form-signin h1 {
+.form-questions {
+max-width:500px;
+
+}
+.form-signin h1, .form-questions h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 42px;
   letter-spacing: 1px;
   color: white;
   text-transform: uppercase;
+}
+
+.form-questions h1 {
+font-size: 36px;
 }
 
 .form-signin p {
