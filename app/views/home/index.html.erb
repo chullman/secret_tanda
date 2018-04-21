@@ -7,7 +7,7 @@
       <nav class="nav nav-masthead justify-content-center">
         <a class="nav-link active" href="#">Dashboard</a>
         <a class="nav-link" href="#">Leaderboard</a>
-        <a class="nav-link" href="index.html">Logout</a>
+        <a class="nav-link" <%= link_to "Logout", destroy_user_session_path, method: :delete %></a>
       </nav>
     </div>
   </header>
